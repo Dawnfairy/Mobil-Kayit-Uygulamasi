@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.GirisSayfasi">
+    <ContentPage.Content>
+
+        <ScrollView Grid.Row="1" BackgroundColor="WhiteSmoke">
+            <StackLayout BackgroundColor="DimGray"  Orientation="Vertical" Padding="25,20,25,20" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" Scale="1"   >
+
+                <Entry Placeholder="Kullanıcı Adı" PlaceholderColor="White"  
+                       TextColor="White" 
+                       HorizontalOptions="FillAndExpand" 
+                   x:Name="KullanıcıGiriş" 
+                   Keyboard="Text"/>
+
+                <Entry Placeholder="Şifre" PlaceholderColor="White" 
+                       TextColor="White"  
+                       HorizontalOptions="FillAndExpand" 
+                   x:Name="ŞifreGiriş"
+                   IsPassword="True"/>
+
+                <Button  Margin="0,10,0,0" Text="                      Giriş Yap                      "  x:Name="GirişYap" Clicked="GirişYap_Clicked" VerticalOptions="Center"
+                   BackgroundColor="DarkMagenta"
+                        TextColor="White" FontSize="16" FontAttributes="Bold"/>
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

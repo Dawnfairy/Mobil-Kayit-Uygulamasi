@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.MainPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1" BackgroundColor="DimGray">
+            <StackLayout BackgroundColor="WhiteSmoke"  Orientation="Vertical" Padding="25,20,25,20" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" Scale="1" >
+
+                <Label Text="Öğrenci Kayıt Uygulamasına" FontSize="24"  FontAttributes="Italic"  LineBreakMode="CharacterWrap" HorizontalOptions="Center" TextColor="Black" />
+                <Label Text="Hoş Geldiniz" FontSize="24" FontAttributes="Italic"  LineBreakMode="CharacterWrap" HorizontalOptions="Center" TextColor="Black" />
+
+                
+
+                <Button Margin="0,10,0,0" Text="Öğretmen Giriş" x:Name="GirişSayfası" Clicked="Button_Giriş"
+              
+                        BackgroundColor="DarkMagenta"
+                        TextColor="White" FontSize="16" FontAttributes="Bold"/>
+
+                <Button Margin="0,10,0,0" Text="Admin Giriş" x:Name="AdminSayfası" Clicked="Admin_Giriş"
+                        
+                        BackgroundColor="DarkMagenta"
+                        TextColor="White" FontSize="16" FontAttributes="Bold"/>
+
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.AdminSecenek">
+
+    <ContentPage.ToolbarItems>
+
+
+
+        <ToolbarItem Text="Çıkış Yap" Clicked="ToolbarItem_Clicked" />
+
+
+    </ContentPage.ToolbarItems>
+
+
+    <ContentPage.Content>
+        <ScrollView Grid.Row="1" BackgroundColor="WhiteSmoke">
+            <StackLayout BackgroundColor="DimGray"  Orientation="Vertical" Padding="25,20,25,20" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" Scale="1"   >
+
+
+                <Button Margin="0,10,0,0" Text="           Öğretmen Kayıt           " x:Name="KayıtSayfası" Clicked="KayıtSayfası_Clicked"  VerticalOptions="Center"             
+                        BackgroundColor="DarkMagenta"
+                        TextColor="White" FontSize="16"  />
+
+                <Button Margin="0,10,0,0" Text="           Öğretmen Listesi           " x:Name="OgrListeSayfası" Clicked="OgrListeSayfası_Clicked" VerticalOptions="Center"
+                        BackgroundColor="DarkMagenta"
+                        TextColor="White" FontSize="16"  />
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

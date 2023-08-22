@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.OgrKayıt"
+             Title="Kayıt Sayfası">
+    <ContentPage.Content>
+        <ScrollView  Grid.Row="1" BackgroundColor="WhiteSmoke">
+            <StackLayout BackgroundColor="DimGray"  Orientation="Vertical" Padding="25,20,25,20" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" Scale="1"   >
+
+                <Entry Placeholder="Ad" PlaceholderColor="White" HorizontalOptions="FillAndExpand" TextColor="White"
+                   x:Name="AdK"
+                   Keyboard="Text"/>
+                <Entry Placeholder="Soyad" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="SoyadK"
+                   Keyboard="Text"/>
+                <Entry Placeholder="Telefon No" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="TelefonNoK"
+                   Keyboard="Telephone"/>
+                <Entry Placeholder="Kullanıcı Adı" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="KullanıcıAdıK"
+                   Keyboard="Text"/>
+                <Entry Placeholder="Şifre" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="ŞifreK"
+                   IsPassword="True"/>
+                <Button Text="                    Kayıt Ol                    " Margin="0,10,0,0" x:Name="OgrKayıtOl" Clicked="OgrKayıtOl_Clicked" BackgroundColor="Purple"
+                   VerticalOptions="Center"  TextColor="White" />
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

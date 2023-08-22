@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.KullaniciSayfasi" BarBackgroundColor="DarkMagenta">
+  <!--Pages can be added as references or inline-->
+    <TabbedPage.ToolbarItems>
+
+        <ToolbarItem Text="Çıkış Yap" Clicked="ToolbarItem_Clicked"/>
+
+
+    </TabbedPage.ToolbarItems>
+    <ContentPage Title="Öğrenci Kayıt Et">
+        <ScrollView Grid.Row="1" BackgroundColor="WhiteSmoke">
+            <StackLayout BackgroundColor="DimGray"  Orientation="Vertical" Padding="25,20,25,20" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center" Scale="1"   >
+
+                <Entry Placeholder="Ad" PlaceholderColor="White" HorizontalOptions="FillAndExpand" TextColor="White"
+                   x:Name="AdK"
+                   Keyboard="Text"/>
+                <Entry Placeholder="Soyad" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="SoyadK"
+                   Keyboard="Text"/>
+                <Entry Placeholder="Doğum Yılı" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="DogumYılıK"
+                   Keyboard="Numeric"/>
+                <Entry Placeholder="Boy (cm)" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="BoyK"
+                   Keyboard="Numeric"/>
+                <Entry Placeholder="Kilo" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="KiloK"
+                   Keyboard="Numeric"/>
+                <Entry Placeholder="Telefon No" PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="TelefonNoK"
+                   Keyboard="Telephone"/>
+                <Entry Placeholder="Adres"  PlaceholderColor="White" HorizontalOptions="FillAndExpand"  TextColor="White"
+                   x:Name="AdresK"
+                   Keyboard="Text"/>
+
+                <Button Text="                    Kayıt Et                    " Margin="0,10,0,0" x:Name="KayıtOl" Clicked="KayıtOl_Clicked" BackgroundColor="Purple"
+                   VerticalOptions="Center"  TextColor="White" />
+
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+
+
+    <ContentPage Title="Öğrenci Listesi">
+
+
+        <StackLayout>
+            <ListView x:Name="ogrenciListView" SelectedItem="OgrenciBilgisi"  ItemTapped="ogrenciListView_ItemTapped">
+                <ListView.ItemTemplate >
+                    <DataTemplate >
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal" BackgroundColor="White" >
+                                <Label Text="{Binding Ad}" FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                                <Label Text="{Binding Soyad}" FontSize="18" TextTransform="Uppercase" VerticalOptions="Center" TextColor="Black"/>
+                                <Label Text="{Binding OgrenciNo}" FontSize="18" TextTransform="Uppercase" VerticalOptions="Center" TextColor="Black" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+
+
+    </ContentPage>
+
+</TabbedPage>

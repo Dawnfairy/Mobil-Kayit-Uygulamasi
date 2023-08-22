@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.AdminSayfasi"
+             Title="Öğretmen Listesi" >
+
+    <ContentPage.ToolbarItems> 
+        
+
+
+    <ToolbarItem Text="Çıkış Yap" Clicked="ToolbarItem_Clicked"/>
+       
+
+    </ContentPage.ToolbarItems>
+
+
+
+    <ListView x:Name="ogretmenListView" SelectedItem="OgretmenBilgisi"  ItemTapped="ogretmenListView_ItemTapped">
+        <ListView.ItemTemplate >
+            <DataTemplate >
+                <ViewCell >
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White" >
+                        <Label Text="{Binding KullaniciAdi}" FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text=" - " FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="{Binding Ad}" FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="{Binding Soyad}" FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text=" - " FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                        <Label Text="{Binding TelefonNo}" FontSize="18" VerticalOptions="Center" TextColor="Black" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

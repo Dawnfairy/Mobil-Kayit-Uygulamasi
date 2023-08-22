@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.OgrenciBilgiSayfasi" >
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  >
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray"  Padding="5">
+            <Label Text="  Öğrenci No : " TextColor="White"   FontSize="22" 
+                />
+            <Label x:Name="no" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Ad : "  TextColor="White"  FontSize="22"
+                />
+            <Label x:Name="ad" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray"  Padding="5">
+            <Label Text="  Soyad : "  TextColor="White"  FontSize="22"
+               />
+            <Label x:Name="soyad" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Doğum Yılı : " TextColor="White"  FontSize="22"
+                 />
+            <Label x:Name="dogumyılı" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Boy(cm) : " TextColor="White"  FontSize="22"
+                />
+            <Label x:Name="boy" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Kilo : " TextColor="White"  FontSize="22"
+                />
+            <Label x:Name="kilo" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Telefon No : " TextColor="White"  FontSize="22"
+                />
+            <Label x:Name="tel" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Adres : " TextColor="White"  FontSize="22"
+                 />
+            <Label x:Name="adres" Text=" " TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobil.AdminOgrenciBilgiSayfasi">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Ad : "  TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Ad}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="  Soyad : "  TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Soyad}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="Öğretmen Ad: " TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding OgretmenAd}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="Telefon: " TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Telefon}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="Adres: " TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Adres}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="DogumYili: "  TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding DogumYili}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="Boy: " TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Boy}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="Kilo: " TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding Kilo}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="DimGray" Padding="5">
+            <Label Text="OgrenciNo: "  TextColor="White"  FontSize="22"/>
+            <Label Text="{Binding OgrenciNo}" TextColor="White" FontSize="22" FontAttributes="Italic" TextTransform="Uppercase"
+                 />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
