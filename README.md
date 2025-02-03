@@ -46,7 +46,7 @@ Bu uygulama, adminin öğretmenleri kayıt ettiği ve yalnızca kayıtlı olan �
    Projeyi yerel makinenize klonlamak için terminal veya Git arayüzünüz üzerinden aşağıdaki komutu kullanın:
 
    ```bash
-   git clone https://github.com/KullaniciAdi/Mobil-Kayit-Uygulamasi.git
+   git clone https://github.com/Dawnfairy/Mobil-Kayit-Uygulamasi.git
 
 2. **Geliştirme Ortamını Ayarlayın:**
 
